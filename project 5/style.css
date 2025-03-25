@@ -1,0 +1,103 @@
+/* Set a gradient background */
+body {
+    background: linear-gradient(45deg, #b700ff, #ffff01, #00b3ff);
+    font-family: 'Arial', sans-serif;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling for the header */
+h1 {
+    font-size: 3rem;
+    margin: 0;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin: 20px 0;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Style for the container of the buttons */
+.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+/* General button styles */
+.btn {
+    height: 200px;
+    width: 200px;
+    border-radius: 20%;
+    border: 10px solid black;
+    margin: 15px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.3s;
+}
+
+/* Button colors */
+.red {
+    background-color: #e74c3c;
+}
+
+.yellow {
+    background-color: #f39c12;
+}
+
+.green {
+    background-color: #2ecc71;
+}
+
+.blue {
+    background-color: #3498db;
+}
+
+/* Flash effect for game sequence */
+.flash, .userflash {
+    background-color: white;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Hover effect for the buttons */
+.btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Animations for flashing buttons */
+@keyframes buttonFlash {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Apply flashing animation */
+.flash, .userflash {
+    animation: buttonFlash 0.5s ease-in-out;
+}
+
+/* Button styles when pressed by user */
+.btn:active {
+    transform: scale(0.95);
+    box-shadow: none;
+}
