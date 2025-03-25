@@ -1,0 +1,44 @@
+*
+{
+    margin:0;
+    padding:0;
+}
+body{
+    min-height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle at center, #1a2a6c, #b21f1f, #fdbb2d);
+}
+.wave
+{
+    position:relative;
+    width:500px;
+    height: 500px;
+    transform-style: preserve-3d;
+    transform:perspective(800px) rotateX(60deg);
+}
+.wave div{
+    position:absolute;
+    display: block;
+    border:10px solid;
+    border-image: linear-gradient(45deg, #00F5A0, #00D9F5, #008CFF, #6A00FF) 1;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+    border-radius: 50%;
+    animation: wave 3s ease-in-out infinite;
+    top:calc(var(--i)*10px);
+    left:calc(var(--i)*10px);
+    bottom:calc(var(--i)*10px);
+    right:calc(var(--i)*10px);
+    animation-delay:calc(var(--i)*0.1s);
+}
+@keyframes wave {
+    0%,100%
+    {
+        transform: translateZ(-120px);
+    }
+    50%
+    {
+        transform:translateZ(120px);
+    }
+}
