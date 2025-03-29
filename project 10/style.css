@@ -1,0 +1,118 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(135deg, #6c63ff, #4d44db);
+    min-height: 100vh;
+    padding: 20px;
+    color: white;
+}
+h1 {
+    color: #fff;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    font-size: 2.5rem;
+}
+.game-info {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+}
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-gap: 15px;
+    margin-bottom: 20px;
+}
+.card {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+}
+.card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+.card-face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+.card-front {
+    background: white;
+    transform: rotateY(180deg);
+    font-family: 'Segoe UI Emoji', 'Segoe UI', sans-serif; 
+    font-size: 50px; 
+}
+
+.card-back {
+    background: linear-gradient(135deg, #ff4081, #ff0080);
+    color: white;
+}
+.card.flipped {
+    transform: rotateY(180deg);
+}
+.card.matched {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 0.5s, opacity 0.5s linear;
+}
+.restart-btn {
+    margin-top: 30px;
+    padding: 15px 30px;
+    background: #ff4081;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+.restart-btn:hover {
+    background: #ff0080;
+}
+@keyframes celebration {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+.celebrate {
+    animation: celebration 0.5s;
+}
+
+/* Confetti styles */
+.confetti {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 1000;
+}
+.confetti-piece {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #ff4081;
+    opacity: 0;
+    animation: confettiFall 2s forwards;
+}
+@keyframes confettiFall {
+    0% { opacity: 1; transform: translateY(-100px); }
+    100% { opacity: 0; transform: translateY(100vh); }
+}
