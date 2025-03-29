@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://images.unsplash.com/photo-1514632595-4944383f2737?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="weather-card">
+        <div class="search">
+            <input type="text" placeholder="Enter city name" id="search-input">
+            <button id="search-btn"><i class="fas fa-search"></i></button>
+        </div>
+        
+        <div class="weather" id="weather">
+            <div class="weather-icon">
+                <i class="fas fa-sun"></i>
+            </div>
+            <div class="temp" id="temp">33°C</div>
+            <div class="city" id="city">Chennai</div>
+            
+            <div class="details">
+                <div class="col">
+                    <i class="fas fa-tint"></i>
+                    <div class="humidity">
+                        <p id="humidity">64%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <i class="fas fa-wind"></i>
+                    <div class="wind">
+                        <p id="wind">12 km/h</p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>

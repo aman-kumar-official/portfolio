@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://images.unsplash.com/photo-1564585447193-cd9a0cf42a36?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+    <title>Pixel Art Maker</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <h1>Pixel Art Maker</h1>
+    <p>Create your masterpiece pixel by pixel!</p>
+    
+    <div class="controls">
+        <div class="control-group">
+            <label for="grid-size">Grid Size</label>
+            <select id="grid-size">
+                <option value="8">8x8</option>
+                <option value="16" selected>16x16</option>
+                <option value="24">24x24</option>
+                <option value="32">32x32</option>
+            </select>
+        </div>
+        
+        <div class="control-group">
+            <label for="color-picker">Color</label>
+            <input type="color" id="color-picker" value="#6c63ff">
+        </div>
+        
+        <div class="control-group">
+            <label for="brush-size">Brush Size</label>
+            <select id="brush-size">
+                <option value="1">1x1</option>
+                <option value="2">2x2</option>
+                <option value="3">3x3</option>
+            </select>
+        </div>
+        
+        <div class="control-group">
+            <label>Tools</label>
+            <div class="action-buttons">
+                <button id="fill-btn" title="Fill All"><i class="fas fa-fill"></i></button>
+                <button id="clear-btn" title="Clear" class="btn-outline"><i class="fas fa-eraser"></i></button>
+                <button id="save-btn" title="Save as PNG"><i class="fas fa-download"></i></button>
+            </div>
+        </div>
+    </div>
+    
+    <div id="grid-container">
+        <div id="pixel-grid"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
