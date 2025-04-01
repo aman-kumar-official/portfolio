@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherSphere - Beautiful Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="weather-app">
+            <div class="search-container">
+                <input type="text" id="city-input" placeholder="Enter city name..." autocomplete="off">
+                <button id="search-btn"><i class="fas fa-search"></i></button>
+                <button id="location-btn"><i class="fas fa-location-arrow"></i></button>
+            </div>
+            
+            <div class="weather-display">
+                <div class="weather-info">
+                    <div class="city-name" id="city-name">--</div>
+                    <div class="date" id="date">-- -- ----</div>
+                    <div class="temperature" id="temperature">--°C</div>
+                    <div class="weather-description" id="weather-description">--</div>
+                </div>
+                
+                <div class="weather-icon" id="weather-icon">
+                    <i class="fas fa-sun"></i>
+                </div>
+            </div>
+            
+            <div class="weather-details">
+                <div class="detail-item">
+                    <i class="fas fa-temperature-high"></i>
+                    <div>
+                        <span class="detail-value" id="feels-like">--°C</span>
+                        <span class="detail-label">Feels Like</span>
+                    </div>
+                </div>
+                <div class="detail-item">
+                    <i class="fas fa-tint"></i>
+                    <div>
+                        <span class="detail-value" id="humidity">--%</span>
+                        <span class="detail-label">Humidity</span>
+                    </div>
+                </div>
+                <div class="detail-item">
+                    <i class="fas fa-wind"></i>
+                    <div>
+                        <span class="detail-value" id="wind-speed">-- km/h</span>
+                        <span class="detail-label">Wind Speed</span>
+                    </div>
+                </div>
+                <div class="detail-item">
+                    <i class="fas fa-compress-alt"></i>
+                    <div>
+                        <span class="detail-value" id="pressure">-- hPa</span>
+                        <span class="detail-label">Pressure</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="forecast-container">
+                <h3>5-Day Forecast</h3>
+                <div class="forecast-items" id="forecast-items">
+                    <!-- Forecast items will be added here by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
