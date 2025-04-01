@@ -124,8 +124,9 @@ pdfLinks.forEach(link => {
     link.addEventListener('click', (e) => {
         e.preventDefault();
         const pdfFile = link.getAttribute('data-pdf');
-        pdfFrame.src = `assignments/${pdfFile}`; // Path to your PDFs
+        pdfFrame.src = `/portfolio/Assignments/${pdfFile}`;
         pdfModal.style.display = 'flex';
+        document.body.style.overflow = 'flex';
     });
 });
 
