@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Real-Time Network Attack & Defence Simulator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>REAL-TIME NETWORK ATTACK &amp; DEFENCE SIMULATOR</h1>
+  <p>CRYPTOGRAPHY &amp; NETWORK SECURITY — EDUCATIONAL PROJECT</p>
+</header>
+
+<div class="grid">
+
+  <div class="panel user-a" id="panelA">
+    <div class="panel-header"><div class="dot"></div> USER A — ALICE</div>
+    <div class="chat-area" id="chatA">
+      <div class="msg system">[ Secure channel initialized ]</div>
+    </div>
+    <div class="enc-toggle">
+      <div class="toggle-switch on" id="toggleA" onclick="toggleEnc('A')"></div>
+      <span id="encLabelA">🔒 Encryption ON</span>
+    </div>
+    <div class="input-area">
+      <select class="algo-select" id="algoA" onchange="onAlgoChange('A')">
+        <option value="caesar">Caesar Cipher (ROT-13) — WEAK</option>
+        <option value="vigenere">Vigenere Cipher (key=KEY) — MEDIUM</option>
+        <option value="aes">AES-256 (Simulated) — STRONG</option>
+        <option value="hash">Hash Integrity (HMAC) — DEFENCE</option>
+        <option value="timestamp">Timestamp + Nonce + HMAC — FULL DEFENCE</option>
+      </select>
+      <div class="input-row">
+        <input type="text" id="inputA" placeholder="Type message to Bob..." onkeydown="if(event.key==='Enter') sendMsg('A')">
+        <button class="btn-send-a" onclick="sendMsg('A')">SEND ▶</button>
+      </div>
+    </div>
+    <div class="tip">▲ Alice → Bob</div>
+  </div>
+
+  <div class="panel attacker" id="panelAtt">
+    <div class="panel-header"><div class="dot"></div>ATTACKER — EVE (MAN-IN-THE-MIDDLE)</div>
+    <div class="attacker-body">
+
+      <div>
+        <div class="section-label">Intercepted Raw Packet</div>
+        <div class="packet-display idle" id="packetDisplay">[ No packet captured yet... ]</div>
+      </div>
+
+      <div class="crack-panel">
+        <div class="crack-title">CRYPTANALYSIS ENGINE — Eve must crack the cipher to read it!</div>
+        <div class="crack-progress-wrap"><div class="crack-progress-bar" id="crackBar"></div></div>
+        <div class="crack-attempts" id="crackAttempts">[ Press CRACK to start cracking attempt... ]</div>
+        <div class="crack-result" id="crackResult"></div>
+        <button class="btn-crack" id="btnCrack" onclick="startCrack()" style="margin-top:6px">
+          🔓 CRACK ENCRYPTION (Brute-Force / Cryptanalysis)
+        </button>
+      </div>
+
+      <div>
+        <div class="section-label">Attack Actions</div>
+        <div class="attack-btns">
+          <button class="btn-modify"  onclick="showModify()">✏ MODIFY</button>
+          <button class="btn-block"   onclick="doBlock()">🚫 BLOCK</button>
+          <button class="btn-replay"  onclick="doReplay()">🔁 REPLAY ATTACK</button>
+        </div>
+        <div class="modify-area" id="modifyArea">
+          <div class="section-label" style="margin-top:5px">✏ Tampered message to inject:</div>
+          <input type="text" id="modifyInput" placeholder="Enter modified message...">
+          <button class="btn-send-modified" onclick="doModify()">INJECT TAMPERED PACKET ▶</button>
+        </div>
+      </div>
+
+      <div>
+        <div class="section-label">Attack Log</div>
+        <div class="log-area" id="logArea">
+          <div class="log-entry">[ Attacker idle — waiting for packets... ]</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel user-b" id="panelB">
+    <div class="panel-header"><div class="dot"></div> USER B — BOB</div>
+    <div class="chat-area" id="chatB">
+      <div class="msg system">[ Secure channel initialized ]</div>
+    </div>
+    <div class="enc-toggle">
+      <div class="toggle-switch on" id="toggleB" onclick="toggleEnc('B')"></div>
+      <span id="encLabelB">🔒 Encryption ON</span>
+    </div>
+    <div class="input-area">
+      <select class="algo-select" id="algoB" onchange="onAlgoChange('B')">
+        <option value="caesar">Caesar Cipher (ROT-13) — WEAK</option>
+        <option value="vigenere">Vigenère Cipher (key=KEY) — MEDIUM</option>
+        <option value="aes">AES-256 (Simulated) — STRONG</option>
+        <option value="hash">Hash Integrity (HMAC) — DEFENCE</option>
+        <option value="timestamp">Timestamp + Nonce + HMAC — FULL DEFENCE</option>
+      </select>
+      <div class="input-row">
+        <input type="text" id="inputB" placeholder="Type message to Alice..." onkeydown="if(event.key==='Enter') sendMsg('B')">
+        <button class="btn-send-b" onclick="sendMsg('B')">SEND ▶</button>
+      </div>
+    </div>
+    <div class="tip">▲ Bob → Alice</div>
+  </div>
+
+</div>  
+
+<script src="script.js"></script>
+</body>
+</html>

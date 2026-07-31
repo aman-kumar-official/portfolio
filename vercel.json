@@ -1,0 +1,54 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/**/*.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "index.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "styles.css",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "script.js",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "image.png",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "portfolio.png",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "Aman Kumar Singh.pdf",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "Project*/**",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/contact",
+      "methods": ["POST", "OPTIONS"],
+      "dest": "/api/contact.js"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/api/(.*)",
+      "headers": [
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "X-Frame-Options", "value": "DENY" },
+        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" }
+      ]
+    }
+  ]
+}

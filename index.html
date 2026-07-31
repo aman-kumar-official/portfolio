@@ -1,414 +1,1163 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="image.jpg">
-    <title>Aman Kumar Singh | Portfolio</title>
+    <meta name="description"
+        content="Aman Kumar Singh — Full Stack Developer & CS Student at VIT. Specializing in React, JavaScript, and modern web experiences.">
+    <meta name="keywords" content="Aman Kumar Singh, portfolio, Full stack developer, React, JavaScript, VIT">
+    <meta name="author" content="Aman Kumar Singh">
+    <meta property="og:title" content="Aman Kumar Singh | Full Stack Developer">
+    <meta property="og:description" content="CS Student at VIT | Building beautiful, functional web experiences.">
+    <meta property="og:image" content="image.png">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="image.png" type="image/png">
+    <title>Aman Kumar Singh | Full Stack Developer</title>
+
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <body>
-        <header>
-            <div class="container">
-                <nav>
-                    <a href="#" class="logo">Aman<span>Singh</span></a>
-		    <div class="form-check-reverse form-switch dark-mode">
-            		<input class="form-check-input" type="checkbox" id="darkModeSwitch">
-            		<label class="form-check-label" for="darkModeSwitch">Dark Mode</label>
-          	    </div>
-                    <ul class="nav-links">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                    <div class="hamburger">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>
-                </nav>
-            </div>
-        </header>
-    
-        <section class="hero" id="home">
-            <div class="container">
-                <div class="hero-content">
-                    <div class="hero-text">
-                        <h1>Hi, I'm <span>Aman Kumar Singh</span></h1>
-                        <p>I'm a student in Vellore Institute of Technology, studying Computer Science. I enjoy doing front-end development with expertise in HTML, CSS, JavaScript, and modern frameworks like React and Vue.js.</p>
-                        <div>
-                            <a href="#portfolio" class="btn">View My Work</a>
-                            <a href="#contact" class="btn btn-outline">Contact Me</a>
-                        </div>
-                        <div class="social-icons">
-                            <a href="https://github.com/aman-kumar-official"><i class="fab fa-github"></i></a>
-                            <a href="https://www.linkedin.com/in/aman-kumar-singh-687408280?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="https://www.instagram.com/stories/aman_kumar_official_/"><i class="fab fa-instagram"></i></a>
-                            <a href="Aman Kumar Singh.pdf"><i class="fa-solid fa-file"></i></a>
-                        </div>
-                    </div>
-                    <div class="hero-image">
-                        <img src="image.jpg" alt="Aman Kumar Singh" style="border-radius: 30%;">
-                    </div>
-                </div>
-            </div>
-        </section>
-    
-        <section class="section" id="about">
-            <div class="container">
-                <div class="section-title">
-                    <h2>About Me</h2>
-                </div>
-                <div class="about-content">
-                    <div class="about-image">
-                        <img src="image.jpg" alt="About Aman" style="border-radius: 50%;">
-                    </div>
-                    <div class="about-text">
-                        <h3>Who am I?</h3>
-                        <p>I'm a student in Vellore Institute of Technology, studying Computer Science. I enjoy doing front-end development with expertise in HTML, CSS, JavaScript, and modern frameworks like React and Vue.js.</p>
-                        <p>I love creating beautiful, functional, and user-friendly websites that deliver exceptional user experiences. My goal is to build applications that are not only visually appealing but also robust and scalable.</p>
-                        <div class="skills">
-                            <div class="skill-item">
-                                <div class="skill-name">
-                                    <span>HTML/CSS</span>
-                                    <span>95%</span>
-                                </div>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" style="width: 95%;"></div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-name">
-                                    <span>JavaScript</span>
-                                    <span>90%</span>
-                                </div>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" style="width: 90%;"></div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-name">
-                                    <span>React</span>
-                                    <span>85%</span>
-                                </div>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" style="width: 85%;"></div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-name">
-                                    <span>Node.js</span>
-                                    <span>80%</span>
-                                </div>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" style="width: 80%;"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    
-        <section class="section services" id="services">
-            <div class="container">
-                <div class="section-title">
-                    <h2>My Services</h2>
-                </div>
-                <div class="services-container">
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-code"></i>
-                        </div>
-                        <h3>Web Development</h3>
-                        <p>Custom website development tailored to your specific needs using the latest technologies and best practices.</p>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-mobile-alt"></i>
-                        </div>
-                        <h3>Responsive Design</h3>
-                        <p>Websites that look and function perfectly on all devices, from desktop to mobile.</p>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-paint-brush"></i>
-                        </div>
-                        <h3>UI/UX Design</h3>
-                        <p>Beautiful and intuitive user interfaces designed to enhance user experience and engagement.</p>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-search"></i>
-                        </div>
-                        <h3>SEO Optimization</h3>
-                        <p>Optimized websites that rank higher in search results and attract more organic traffic.</p>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-shopping-cart"></i>
-                        </div>
-                        <h3>E-commerce Solutions</h3>
-                        <p>Complete online store solutions with secure payment gateways and inventory management.</p>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-server"></i>
-                        </div>
-                        <h3>Web Hosting</h3>
-                        <p>Reliable and secure hosting solutions with 99.9% uptime and expert technical support.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    
-        <section class="section" id="portfolio">
-            <div class="container">
-                <div class="section-title">
-                    <h2>My Portfolio</h2>
-                </div>
-                <div class="portfolio-filter">
-                    <button class="filter-btn active" data-filter="all">All</button>
-                    <button class="filter-btn" data-filter="web">Web Design</button>
-                    <button class="filter-btn" data-filter="app">App Development</button>
-                    <button class="filter-btn" data-filter="graphic">Graphic Design</button>
-                </div>
-                <div class="portfolio-container">
-                    <div class="portfolio-item" data-category="web">
-                        <img src="https://images.unsplash.com/photo-1514632595-4944383f2737?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Project 1" class="portfolio-img">
-                        <div class="portfolio-overlay">
-                            <h3>Weather APP</h3>
-                            <p>Web Design</p>
-                            <a href="Project1/index.html"><i class="fas fa-link"></i></a>
-                        </div>
-                    </div>
-                    <div class="portfolio-item" data-category="web">
-                        <img src="https://images.unsplash.com/photo-1659766472587-2d3064664f36?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Project 2" class="portfolio-img">
-                        <div class="portfolio-overlay">
-                            <h3>Dino Runner Game</h3>
-                            <p>Web Design</p>
-                            <a href="Project2/index.html"><i class="fas fa-link"></i></a>
-                        </div>
-                    </div>
-                    <div class="portfolio-item" data-category="web">
-                        <img src="https://images.unsplash.com/photo-1611339555312-e607c8352fd7?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Project 3" class="portfolio-img">
-                        <div class="portfolio-overlay">
-                            <h3>Music Player</h3>
-                            <p>Web Design</p>
-                            <a href="Project3/index.html"><i class="fas fa-link"></i></a>
-                        </div>
-                    </div>
-                    <div class="portfolio-item" data-category="web">
-                        <img src="https://images.unsplash.com/photo-1551103782-8ab07afd45c1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Project 4" class="portfolio-img">
-                        <div class="portfolio-overlay">
-                            <h3>Memory game</h3>
-                            <p>Web Design</p>
-                            <a href="Project4/index.html"><i class="fas fa-link"></i></a>
-                        </div>
-                    </div>
-                    <div class="portfolio-item" data-category="web">
-                        <img src="https://images.unsplash.com/photo-1464820453369-31d2c0b651af?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Project 5" class="portfolio-img">
-                        <div class="portfolio-overlay">
-                            <h3>SimonSays</h3>
-                            <p>Web Design</p>
-                            <a href="Project5/index.html"><i class="fas fa-link"></i></a>
-                        </div>
-                    </div>
-                    <div class="portfolio-item" data-category="web">
-                        <img src="https://images.unsplash.com/photo-1564585447193-cd9a0cf42a36?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Project 6" class="portfolio-img">
-                        <div class="portfolio-overlay">
-                            <h3>Pixel Art</h3>
-                            <p>Web Design</p>
-                            <a href="Project6/index.html"><i class="fas fa-link"></i></a>
-                        </div>
-                    </div>
-                    <div class="portfolio-item" data-category="web">
-                        <img src="https://plus.unsplash.com/premium_photo-1720610706902-f92d98fb8b35?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Project 7" class="portfolio-img">
-                        <div class="portfolio-overlay">
-                            <h3>Audio Visualizer</h3>
-                            <p>Web Design</p>
-                            <a href="Project7/index.html"><i class="fas fa-link"></i></a>
-                        </div>
-                    </div>
-                    <div class="portfolio-item" data-category="web">
-                        <img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Project 8" class="portfolio-img">
-                        <div class="portfolio-overlay">
-                            <h3>Central Cinema</h3>
-                            <p>Web Design</p>
-                            <a href="Project8/index.html"><i class="fas fa-link"></i></a>
-                        </div>
-                    </div>
-                    <div class="portfolio-item" data-category="web">
-                        <img src="portfolio.png" alt="Project 9" class="portfolio-img">
-                        <div class="portfolio-overlay">
-                            <h3>My Portfolio</h3>
-                            <p>Web Design</p>
-                            <a href="index.html"><i class="fas fa-link"></i></a>
-                        </div>
-                    </div>
 
-                    <div class="portfolio-item" data-category="app">
-                        <img src="https://images.unsplash.com/photo-1606054534744-a3b13e35c574?q=80&w=2025&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Project 10" class="portfolio-img">
-                        <div class="portfolio-overlay">
-                            <h3>Wanderlust</h3>
-                            <p>App Development</p>
-                            <a href="https://wanderlust-nf93.onrender.com/listings"><i class="fas fa-link"></i></a>
-                        </div>
-                    </div>
-                    <div class="portfolio-item" data-category="app">
-                        <img src="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="Project 11" class="portfolio-img">
-                        <div class="portfolio-overlay">
-                            <h3>Fitness App (Coming Soon...)</h3>
-                            <p>App Development</p>
-                            <a href="#"><i class="fas fa-link"></i></a>
-                        </div>
-                    </div>
+    <!-- ===== CUSTOM CURSOR ===== -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
 
-                    <div class="portfolio-item" data-category="graphic">
-                        <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=869&q=80" alt="Project 12" class="portfolio-img">
-                        <div class="portfolio-overlay">
-                            <h3>Brand Identity (Coming Soon...)</h3>
-                            <p>Graphic Design</p>
-                            <a href="#"><i class="fas fa-link"></i></a>
-                        </div>
-                    </div>
-                    <div class="portfolio-item" data-category="graphic">
-                        <img src="https://images.unsplash.com/photo-1562157873-818bc0726f68?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=654&q=80" alt="Project 13" class="portfolio-img">
-                        <div class="portfolio-overlay">
-                            <h3>Marketing Materials (Coming Soon...)</h3>
-                            <p>Graphic Design</p>
-                            <a href="#"><i class="fas fa-link"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <!-- ===== NAVIGATION ===== -->
+    <header id="header">
+        <div class="container">
+            <nav>
+                <a href="#home" class="logo" aria-label="Aman Kumar Singh - Home">
+                    Aman<span>.</span>
+                </a>
 
-        <section class="section testimonials">
-            <div class="container">
-                <div class="section-title">
-                    <h2>Client Testimonials</h2>
-                </div>
-                <div class="testimonials-container">
-                    <div class="testimonial-card">
-                        <p class="testimonial-content">"Aman delivered an outstanding website for our business. His attention to detail and creative approach exceeded our expectations. The site has significantly improved our online presence and customer engagement."</p>
-                        <div class="testimonial-author">
-                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah Johnson" class="author-img">
-                            <div class="author-info">
-                                <h4>Sarah Johnson</h4>
-                                <p>CEO, TechSolutions Inc.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-card">
-                        <p class="testimonial-content">"Working with Aman was a pleasure. He understood our vision and translated it into a beautiful, functional website. His technical expertise and professionalism made the entire process smooth and stress-free."</p>
-                        <div class="testimonial-author">
-                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael Brown" class="author-img">
-                            <div class="author-info">
-                                <h4>Michael Brown</h4>
-                                <p>Marketing Director, Creative Minds</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    
-        <section class="section" id="contact">
-            <div class="container">
-                <div class="section-title">
-                    <h2>Get In Touch</h2>
-                </div>
-                <div class="contact-container">
-                    <div class="contact-info">
-                        <h3>Let's Talk About Your Project</h3>
-                        <p>Feel free to reach out if you're looking for a developer for your Project, have a question, or just want to connect.</p>
-                        <div class="contact-details">
-                            <div class="contact-item">
-                                <div class="contact-icon">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                </div>
-                                <div class="contact-text">
-                                    <h4>Location</h4>
-                                    <p>Chennai, TN</p>
-                                    <p>India</p>
-                                </div>
-                            </div>
-                            <div class="contact-item">
-                                <div class="contact-icon">
-                                    <i class="fas fa-envelope"></i>
-                                </div>
-                                <div class="contact-text">
-                                    <h4>Email</h4>
-                                    <p>contact.amankumarsingh@gmail.com</p>
-                                </div>
-                            </div>
-                            <div class="contact-item">
-                                <div class="contact-icon">
-                                    <i class="fas fa-phone-alt"></i>
-                                </div>
-                                <div class="contact-text">
-                                    <h4>Phone</h4>
-                                    <p>+91 9162107894</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="contact-form">
-                        <form id="contactForm">
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Your Name" required>
-                            </div>
-                            <div class="form-group">
-                                <input type="email" class="form-control" placeholder="Your Email" required>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Subject">
-                            </div>
-                            <div class="form-group">
-                                <textarea class="form-control" placeholder="Your Message" required></textarea>
-                            </div>
-                            <button type="submit" class="btn">Send Message</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-    
-        <footer>
-            <div class="container">
-                <div class="footer-content">
-                    <a href="#" class="footer-logo">Aman<span>Singh</span></a>
-                    <p>Creating digital experiences that inspire and engage.</p>
-                    <ul class="footer-links">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                    <div class="footer-social">
-                        <a href="https://github.com/aman-kumar-official"><i class="fab fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/aman-kumar-singh-687408280?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="https://www.instagram.com/stories/aman_kumar_official_/"><i class="fab fa-instagram"></i></a>
-                        <a href="Aman Kumar Singh.pdf"><i class="fa-solid fa-file"></i></a>
-                    </div>
-                </div>
-                <div class="copyright">
-                    <p>&copy; 2025 Aman Kumar Singh. All Rights Reserved. &trade;</p>
-                </div>
-            </div>
-        </footer>
-    
-        <div class="back-to-top">
-            <i class="fas fa-arrow-up"></i>
+                <ul class="nav-links" id="navLinks" role="navigation" aria-label="Main navigation">
+                    <li><a href="#home" class="nav-link" data-section="home">Home</a></li>
+                    <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+                    <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+                    <li><a href="#portfolio" class="nav-link" data-section="portfolio">Projects</a></li>
+                    <li><a href="#experience" class="nav-link" data-section="experience">Experience</a></li>
+                    <li><a href="#achievements" class="nav-link" data-section="achievements">Achievements</a></li>
+                    <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+                </ul>
+
+                <a href="Aman Kumar Singh.pdf" class="nav-cta" target="_blank" rel="noopener noreferrer"
+                    aria-label="Download Resume">
+                    Resume <i class="fas fa-download"></i>
+                </a>
+
+                <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero" id="home">
+        <!-- Animated background particles -->
+        <div class="hero-bg">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
         </div>
 
-    <script src="script.js"></script>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text" data-reveal="left">
+                    <div class="hero-badge">
+                        <span class="badge-dot"></span>
+                        Available for Opportunities
+                    </div>
+                    <h1>
+                        Hi, I'm<br>
+                        <span class="gradient-text">Aman Kumar Singh</span>
+                    </h1>
+                    <div class="hero-role">
+                        <span>I'm a </span>
+                        <span class="typed-text" id="typedText"></span>
+                        <span class="typed-cursor">|</span>
+                    </div>
+                    <p class="hero-desc">
+                        CS Student at <strong>Vellore Institute of Technology.</strong>
+                        Full-stack developer &amp; AI/ML researcher — interned at <strong>Tata Motors</strong> and
+                        co-authored a paper published in <strong>Frontiers</strong>.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#portfolio" class="btn btn-primary" id="viewWorkBtn">
+                            View My Work <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-outline" id="contactHeroBtn">
+                            Let's Talk
+                        </a>
+                    </div>
+                    <div class="social-icons">
+                        <a href="https://github.com/aman-kumar-official" target="_blank" rel="noopener noreferrer"
+                            aria-label="GitHub Profile" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/aman-kumar-singh-687408280" target="_blank"
+                            rel="noopener noreferrer" aria-label="LinkedIn Profile" class="social-link">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://www.instagram.com/aman_kumar_official_/" target="_blank"
+                            rel="noopener noreferrer" aria-label="Instagram Profile" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="mailto:contact.amankumarsingh@gmail.com" aria-label="Send Email" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
 
+                <div class="hero-image" data-reveal="right">
+                    <div class="avatar-wrapper">
+                        <div class="avatar-ring"></div>
+                        <div class="avatar-glow"></div>
+                        <img src="image.png" alt="Aman Kumar Singh — Front-End Developer" class="avatar-img"
+                            loading="eager">
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-card" data-reveal="up" style="--delay: 0.1s">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label">Projects</span>
+                        </div>
+                        <div class="stat-card" data-reveal="up" style="--delay: 0.2s">
+                            <span class="stat-number">2</span>
+                            <span class="stat-label">Internships</span>
+                        </div>
+                        <div class="stat-card" data-reveal="up" style="--delay: 0.3s">
+                            <span class="stat-number">8.55</span>
+                            <span class="stat-label">CGPA @ VIT</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a href="#about" class="scroll-indicator" aria-label="Scroll to About section">
+            <div class="scroll-wheel"></div>
+        </a>
+    </section>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-header" data-reveal="up">
+                <span class="section-tag">Get To Know Me</span>
+                <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+                <p class="section-subtitle">Passionate developer with a love for clean code and beautiful interfaces</p>
+            </div>
+
+            <div class="about-content">
+                <div class="about-image-wrap" data-reveal="left">
+                    <div class="about-img-container">
+                        <img src="image.png" alt="Aman Kumar Singh" class="about-img" loading="lazy">
+                        <div class="about-img-accent"></div>
+                    </div>
+                    <div class="about-card-float">
+                        <i class="fas fa-code"></i>
+                        <div>
+                            <strong>Full Stack Dev</strong>
+                            <span>Front-End · Back-End · AI/ML</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-text" data-reveal="right">
+                    <h3>Who am I?</h3>
+                    <p>
+                        I'm <strong>Aman Kumar Singh</strong>, a Computer Science student at Vellore Institute of
+                        Technology
+                        with a genuine passion for Full Stack development, Artificial Intelligence and Machine Learning.
+                        I love turning ideas into visually
+                        compelling,
+                        highly functional digital experiences.
+                    </p>
+                    <p>
+                        From full stack web applications to AI/ML projects, I enjoy every layer of the tech stack.
+                        My goal is to create products that are not only performant but genuinely delightful to use.
+                    </p>
+
+                    <div class="about-details-grid">
+                        <div class="detail-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <span class="detail-label">Location</span>
+                                <span class="detail-value">Chennai, India</span>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>
+                                <span class="detail-label">University</span>
+                                <span class="detail-value">VIT, Chennai</span>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <span class="detail-label">Email</span>
+                                <span class="detail-value">contact.amankumarsingh@gmail.com</span>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-briefcase"></i>
+                            <div>
+                                <span class="detail-label">Status</span>
+                                <span class="detail-value status-open">Open to Work</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-actions">
+                        <a href="Aman Kumar Singh.pdf" class="btn btn-primary" target="_blank"
+                            rel="noopener noreferrer">
+                            Download CV <i class="fas fa-file-download"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-outline">
+                            Hire Me <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SKILLS SECTION ===== -->
+    <section class="section section-alt" id="skills">
+        <div class="container">
+            <div class="section-header" data-reveal="up">
+                <span class="section-tag">What I Know</span>
+                <h2 class="section-title">Technical <span class="gradient-text">Skills</span></h2>
+                <p class="section-subtitle">Technologies and tools I work with regularly</p>
+            </div>
+
+            <div class="skills-grid" data-reveal="up">
+                <div class="skill-category">
+                    <h4 class="skill-category-title"><i class="fas fa-code"></i> Languages</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag" style="--c: #e44d26"><i class="fab fa-html5"></i> HTML5</span>
+                        <span class="skill-tag" style="--c: #1572b6"><i class="fab fa-css3-alt"></i> CSS3</span>
+                        <span class="skill-tag" style="--c: #f7df1e; --ct: #000"><i class="fab fa-js-square"></i>
+                            JavaScript</span>
+                        <span class="skill-tag" style="--c: #3572A5"><i class="fas fa-code"></i> Python</span>
+                        <span class="skill-tag" style="--c: #b07219"><i class="fas fa-coffee"></i> Java</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h4 class="skill-category-title"><i class="fas fa-layer-group"></i> Frameworks & Libraries</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag" style="--c: #61dafb; --ct: #000"><i class="fab fa-react"></i>
+                            React</span>
+                        <span class="skill-tag" style="--c: #4fc08d"><i class="fab fa-vuejs"></i> Vue.js</span>
+                        <span class="skill-tag" style="--c: #339933"><i class="fab fa-node-js"></i> Node.js</span>
+                        <span class="skill-tag" style="--c: #7b5ea7"><i class="fas fa-server"></i> Express.js</span>
+                        <span class="skill-tag" style="--c: #47a248"><i class="fas fa-leaf"></i> MongoDB</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h4 class="skill-category-title"><i class="fas fa-tools"></i> Tools &amp; Platforms</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag" style="--c: #f05032"><i class="fab fa-git-alt"></i> Git</span>
+                        <span class="skill-tag" style="--c: #f7df1e"><i class="fab fa-github"></i> GitHub</span>
+                        <span class="skill-tag" style="--c: #007acc"><i class="fas fa-code"></i> VS Code</span>
+                        <span class="skill-tag" style="--c: #ff6c37"><i class="fas fa-exchange-alt"></i> REST
+                            APIs</span>
+                        <span class="skill-tag" style="--c: #764abc"><i class="fas fa-atom"></i> Redux</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h4 class="skill-category-title"><i class="fas fa-palette"></i> Design</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag" style="--c: #f24e1e"><i class="fab fa-figma"></i> Figma</span>
+                        <span class="skill-tag" style="--c: #06b6d4; --ct: #000"><i class="fas fa-wind"></i> Tailwind
+                            CSS</span>
+                        <span class="skill-tag" style="--c: #8552b5"><i class="fas fa-shapes"></i> UI/UX</span>
+                        <span class="skill-tag" style="--c: #ff9500"><i class="fas fa-mobile-alt"></i> Responsive
+                            Design</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h4 class="skill-category-title"><i class="fas fa-brain"></i> AI / Machine Learning</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag" style="--c: #ff6f00"><i class="fas fa-fire"></i> TensorFlow</span>
+                        <span class="skill-tag" style="--c: #ee4c2c"><i class="fas fa-burn"></i> PyTorch</span>
+                        <span class="skill-tag" style="--c: #3b7bbf"><i class="fas fa-chart-line"></i>
+                            Scikit-learn</span>
+                        <span class="skill-tag" style="--c: #76b900"><i class="fas fa-eye"></i> OpenCV</span>
+                        <span class="skill-tag" style="--c: #e91e63"><i class="fas fa-network-wired"></i> Deep
+                            Learning</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h4 class="skill-category-title"><i class="fas fa-cloud"></i> Cloud &amp; DevOps</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag" style="--c: #ff9900"><i class="fab fa-aws"></i> AWS EC2</span>
+                        <span class="skill-tag" style="--c: #ff9900"><i class="fab fa-aws"></i> AWS S3</span>
+                        <span class="skill-tag" style="--c: #2496ed"><i class="fab fa-docker"></i> Docker</span>
+                        <span class="skill-tag" style="--c: #46e3b7; --ct: #000"><i class="fas fa-rocket"></i>
+                            Render</span>
+                        <span class="skill-tag" style="--c: #000"><i class="fas fa-triangle"></i> Vercel</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PORTFOLIO SECTION ===== -->
+    <section class="section section-alt" id="portfolio">
+        <div class="container">
+            <div class="section-header" data-reveal="up">
+                <span class="section-tag">My Work</span>
+                <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+                <p class="section-subtitle">A selection of projects I've built</p>
+            </div>
+
+            <div class="portfolio-filter" data-reveal="up">
+                <button class="filter-btn active" data-filter="all" id="filterAll">All</button>
+                <button class="filter-btn" data-filter="web" id="filterWeb">Web Apps</button>
+                <button class="filter-btn" data-filter="app" id="filterApp">Full Stack</button>
+                <button class="filter-btn" data-filter="graphic" id="filterGraphic">Design</button>
+            </div>
+
+            <div class="portfolio-grid" id="portfolioGrid">
+
+                <div class="portfolio-card" data-category="web" data-reveal="up" style="--delay: 0s">
+                    <div class="portfolio-thumb">
+                        <img src="https://images.unsplash.com/photo-1514632595-4944383f2737?q=80&w=800&auto=format&fit=crop"
+                            alt="Weather App Project" class="portfolio-img" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-overlay-content">
+                                <span class="portfolio-tag">Web App</span>
+                                <h3>Weather App</h3>
+                                <p>Real-time weather data with geolocation, interactive UI, and 7-day forecast.</p>
+                                <div class="portfolio-tech">
+                                    <span>HTML</span><span>CSS</span><span>JavaScript</span><span>API</span>
+                                </div>
+                                <a href="Project1/index.html" class="portfolio-link"
+                                    aria-label="View Weather App project">
+                                    View Project <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-card" data-category="web" data-reveal="up" style="--delay: 0.05s">
+                    <div class="portfolio-thumb">
+                        <img src="https://images.unsplash.com/photo-1659766472587-2d3064664f36?q=80&w=800&auto=format&fit=crop"
+                            alt="Dino Runner Game" class="portfolio-img" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-overlay-content">
+                                <span class="portfolio-tag">Game Dev</span>
+                                <h3>Dino Runner Game</h3>
+                                <p>Browser-based endless runner game built with pure JavaScript and Canvas API.</p>
+                                <div class="portfolio-tech">
+                                    <span>JavaScript</span><span>Canvas</span><span>CSS</span>
+                                </div>
+                                <a href="Project2/index.html" class="portfolio-link" aria-label="View Dino Runner Game">
+                                    View Project <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-card" data-category="web" data-reveal="up" style="--delay: 0.1s">
+                    <div class="portfolio-thumb">
+                        <img src="https://images.unsplash.com/photo-1611339555312-e607c8352fd7?q=80&w=800&auto=format&fit=crop"
+                            alt="Music Player" class="portfolio-img" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-overlay-content">
+                                <span class="portfolio-tag">Web App</span>
+                                <h3>Music Player</h3>
+                                <p>Feature-rich music player with playlist management, controls, and dynamic UI.</p>
+                                <div class="portfolio-tech">
+                                    <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                                </div>
+                                <a href="Project3/index.html" class="portfolio-link"
+                                    aria-label="View Music Player project">
+                                    View Project <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-card" data-category="web" data-reveal="up" style="--delay: 0.15s">
+                    <div class="portfolio-thumb">
+                        <img src="https://images.unsplash.com/photo-1551103782-8ab07afd45c1?q=80&w=800&auto=format&fit=crop"
+                            alt="Memory Game" class="portfolio-img" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-overlay-content">
+                                <span class="portfolio-tag">Game Dev</span>
+                                <h3>Memory Game</h3>
+                                <p>Card-matching memory game with score tracking, timer, and difficulty levels.</p>
+                                <div class="portfolio-tech">
+                                    <span>JavaScript</span><span>CSS Grid</span><span>HTML</span>
+                                </div>
+                                <a href="Project4/index.html" class="portfolio-link"
+                                    aria-label="View Memory Game project">
+                                    View Project <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-card" data-category="web" data-reveal="up" style="--delay: 0.2s">
+                    <div class="portfolio-thumb">
+                        <img src="https://images.unsplash.com/photo-1464820453369-31d2c0b651af?q=80&w=800&auto=format&fit=crop"
+                            alt="Simon Says Game" class="portfolio-img" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-overlay-content">
+                                <span class="portfolio-tag">Game Dev</span>
+                                <h3>Simon Says</h3>
+                                <p>Classic Simon Says pattern memory game with progressive difficulty and sound effects.
+                                </p>
+                                <div class="portfolio-tech">
+                                    <span>JavaScript</span><span>Web Audio</span><span>CSS</span>
+                                </div>
+                                <a href="Project5/index.html" class="portfolio-link"
+                                    aria-label="View Simon Says project">
+                                    View Project <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-card" data-category="web" data-reveal="up" style="--delay: 0.25s">
+                    <div class="portfolio-thumb">
+                        <img src="https://images.unsplash.com/photo-1564585447193-cd9a0cf42a36?q=80&w=800&auto=format&fit=crop"
+                            alt="Pixel Art Editor" class="portfolio-img" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-overlay-content">
+                                <span class="portfolio-tag">Creative Tool</span>
+                                <h3>Pixel Art Editor</h3>
+                                <p>Browser-based pixel art editor with colour picker, grid tools, and export
+                                    functionality.</p>
+                                <div class="portfolio-tech">
+                                    <span>Canvas</span><span>JavaScript</span><span>CSS</span>
+                                </div>
+                                <a href="Project6/index.html" class="portfolio-link"
+                                    aria-label="View Pixel Art project">
+                                    View Project <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-card" data-category="web" data-reveal="up" style="--delay: 0.3s">
+                    <div class="portfolio-thumb">
+                        <img src="https://plus.unsplash.com/premium_photo-1720610706902-f92d98fb8b35?q=80&w=800&auto=format&fit=crop"
+                            alt="Audio Visualizer" class="portfolio-img" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-overlay-content">
+                                <span class="portfolio-tag">Creative</span>
+                                <h3>Audio Visualizer</h3>
+                                <p>Real-time audio frequency visualizer using Web Audio API and Canvas rendering.</p>
+                                <div class="portfolio-tech">
+                                    <span>Web Audio API</span><span>Canvas</span><span>JS</span>
+                                </div>
+                                <a href="Project7/index.html" class="portfolio-link"
+                                    aria-label="View Audio Visualizer project">
+                                    View Project <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-card" data-category="web" data-reveal="up" style="--delay: 0.35s">
+                    <div class="portfolio-thumb">
+                        <img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?q=80&w=800&auto=format&fit=crop"
+                            alt="Central Cinema" class="portfolio-img" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-overlay-content">
+                                <span class="portfolio-tag">Web App</span>
+                                <h3>Central Cinema</h3>
+                                <p>Movie browsing app with search, genre filters, trailers, and watchlist management.
+                                </p>
+                                <div class="portfolio-tech">
+                                    <span>JavaScript</span><span>API</span><span>CSS</span>
+                                </div>
+                                <a href="Project8/index.html" class="portfolio-link"
+                                    aria-label="View Central Cinema project">
+                                    View Project <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-card" data-category="web" data-reveal="up" style="--delay: 0.4s">
+                    <div class="portfolio-thumb">
+                        <img src="portfolio.png" alt="Portfolio Website" class="portfolio-img" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-overlay-content">
+                                <span class="portfolio-tag">Web Design</span>
+                                <h3>My Portfolio</h3>
+                                <p>This very portfolio — built from scratch with custom HTML, CSS and JavaScript.</p>
+                                <div class="portfolio-tech">
+                                    <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                                </div>
+                                <a href="index.html" class="portfolio-link" aria-label="View Portfolio project">
+                                    View Project <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Urban-Fix -->
+                <div class="portfolio-card" data-category="app" data-reveal="up" style="--delay: 0s">
+                    <div class="portfolio-thumb">
+                        <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?q=80&w=800&auto=format&fit=crop"
+                            alt="Urban-Fix civic platform" class="portfolio-img" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-overlay-content">
+                                <span class="portfolio-tag">Full Stack</span>
+                                <h3>Urban-Fix</h3>
+                                <p>Civic engagement platform for citizens to report local infrastructure issues and
+                                    track resolution in real time.</p>
+                                <div class="portfolio-tech">
+                                    <span>Node.js</span><span>Express</span><span>MongoDB</span><span>EJS</span><span>JWT</span>
+                                </div>
+                                <a href="https://github.com/aman-kumar-official" target="_blank"
+                                    rel="noopener noreferrer" class="portfolio-link"
+                                    aria-label="View Urban-Fix on GitHub">
+                                    GitHub <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pixro -->
+                <div class="portfolio-card" data-category="app" data-reveal="up" style="--delay: 0.05s">
+                    <div class="portfolio-thumb">
+                        <img src="https://images.unsplash.com/photo-1587620962725-abab7fe55159?q=80&w=800&auto=format&fit=crop"
+                            alt="Pixro AI Webinar Platform" class="portfolio-img" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-overlay-content">
+                                <span class="portfolio-tag"
+                                    style="background:rgba(168,85,247,0.2);border-color:rgba(168,85,247,0.4);color:#c084fc">🏆
+                                    Runner-up</span>
+                                <h3>Pixro — AI Webinar Platform</h3>
+                                <p>Hackathon Runner-up (100+ teams). Webinar platform with live &amp; recorded streaming
+                                    and an Agentic AI virtual assistant.</p>
+                                <div class="portfolio-tech">
+                                    <span>React</span><span>Node.js</span><span>AI/ML</span><span>WebRTC</span>
+                                </div>
+                                <a href="https://github.com/aman-kumar-official" target="_blank"
+                                    rel="noopener noreferrer" class="portfolio-link" aria-label="View Pixro on GitHub">
+                                    GitHub <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Wanderlust -->
+                <div class="portfolio-card" data-category="app" data-reveal="up" style="--delay: 0.1s">
+                    <div class="portfolio-thumb">
+                        <img src="https://images.unsplash.com/photo-1606054534744-a3b13e35c574?q=80&w=800&auto=format&fit=crop"
+                            alt="Wanderlust App" class="portfolio-img" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-overlay-content">
+                                <span class="portfolio-tag">Full Stack</span>
+                                <h3>Wanderlust</h3>
+                                <p>Full-stack travel listing platform with authentication, reviews, maps, and CRUD
+                                    operations.</p>
+                                <div class="portfolio-tech">
+                                    <span>Node.js</span><span>MongoDB</span><span>Express</span><span>EJS</span>
+                                </div>
+                                <a href="https://wanderlust-nf93.onrender.com/listings" target="_blank"
+                                    rel="noopener noreferrer" class="portfolio-link"
+                                    aria-label="View Wanderlust project">
+                                    Live Demo <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Optiv File Cleansing -->
+                <div class="portfolio-card" data-category="app" data-reveal="up" style="--delay: 0.15s">
+                    <div class="portfolio-thumb">
+                        <img src="https://github.com/user-attachments/assets/e0adf616-1855-4e08-992b-c58164d55534"
+                            alt="Automated File Cleansing and Analysis" class="portfolio-img" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-overlay-content">
+                                <span class="portfolio-tag">AI / Full Stack</span>
+                                <h3>Automated File Cleansing</h3>
+                                <p>AI-powered web app to automatically cleanse, redact, and analyze sensitive
+                                    information from various file formats.</p>
+                                <div class="portfolio-tech">
+                                    <span>Python</span><span>Flask</span><span>Gemini AI</span><span>OpenCV</span>
+                                </div>
+                                <a href="https://github.com/aman-kumar-official/optiv" target="_blank"
+                                    rel="noopener noreferrer" class="portfolio-link"
+                                    aria-label="View Optiv project on GitHub">
+                                    GitHub <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 9: Auto-Evaluator -->
+                <div class="portfolio-card" data-category="app" data-reveal="up" style="--delay: 0.2s">
+                    <div class="portfolio-thumb">
+                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=800&auto=format&fit=crop"
+                            alt="Online Exam Auto-Evaluator" class="portfolio-img" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-overlay-content">
+                                <span class="portfolio-tag">AI / EdTech</span>
+                                <h3>Exam Auto-Evaluator</h3>
+                                <p>AI-powered exam evaluator using NLP (BERT, TF-IDF) to auto-grade subjective answers
+                                    and detect AI-generated content.</p>
+                                <div class="portfolio-tech">
+                                    <span>Python</span><span>Streamlit</span><span>NLP</span><span>Transformers</span>
+                                </div>
+                                <a href="https://github.com/aman-kumar-official/exam-paper-evaluation" target="_blank"
+                                    rel="noopener noreferrer" class="portfolio-link"
+                                    aria-label="View Exam Evaluator project">
+                                    GitHub <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 10: Network Simulator -->
+                <div class="portfolio-card" data-category="web" data-reveal="up" style="--delay: 0.25s">
+                    <div class="portfolio-thumb">
+                        <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=800&auto=format&fit=crop"
+                            alt="Network Attack & Defence Simulator" class="portfolio-img" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-overlay-content">
+                                <span class="portfolio-tag">Cybersecurity</span>
+                                <h3>Network Attack Simulator</h3>
+                                <p>Real-time Cryptography & Network Security simulator showcasing Man-in-the-Middle
+                                    attacks, encryption, and tampering.</p>
+                                <div class="portfolio-tech">
+                                    <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                                </div>
+                                <a href="Project10/index.html" target="_blank" rel="noopener noreferrer"
+                                    class="portfolio-link" aria-label="View Network Simulator project">
+                                    Live Demo <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-card coming-soon" data-category="app" data-reveal="up" style="--delay: 0.1s">
+                    <div class="portfolio-thumb">
+                        <img src="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?q=80&w=800&auto=format&fit=crop"
+                            alt="Fitness App" class="portfolio-img" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-overlay-content">
+                                <span class="portfolio-tag coming-tag">Coming Soon</span>
+                                <h3>Fitness App</h3>
+                                <p>Full-featured fitness tracking app with workout plans, progress charts, and goal
+                                    setting.</p>
+                                <div class="portfolio-tech">
+                                    <span>React</span><span>Node.js</span><span>MongoDB</span>
+                                </div>
+                                <span class="portfolio-link disabled">In Development <i
+                                        class="fas fa-wrench"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-card coming-soon" data-category="graphic" data-reveal="up" style="--delay: 0s">
+                    <div class="portfolio-thumb">
+                        <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?q=80&w=800&auto=format&fit=crop"
+                            alt="Brand Identity Design" class="portfolio-img" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-overlay-content">
+                                <span class="portfolio-tag coming-tag">Coming Soon</span>
+                                <h3>Brand Identity</h3>
+                                <p>Complete brand identity package including logo, style guide, and marketing assets.
+                                </p>
+                                <div class="portfolio-tech">
+                                    <span>Figma</span><span>Illustrator</span>
+                                </div>
+                                <span class="portfolio-link disabled">In Development <i
+                                        class="fas fa-wrench"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-card coming-soon" data-category="graphic" data-reveal="up" style="--delay: 0.1s">
+                    <div class="portfolio-thumb">
+                        <img src="https://images.unsplash.com/photo-1562157873-818bc0726f68?q=80&w=800&auto=format&fit=crop"
+                            alt="Marketing Materials" class="portfolio-img" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-overlay-content">
+                                <span class="portfolio-tag coming-tag">Coming Soon</span>
+                                <h3>Marketing Materials</h3>
+                                <p>Social media graphics, banners, and print materials for digital marketing campaigns.
+                                </p>
+                                <div class="portfolio-tech">
+                                    <span>Figma</span><span>Canva</span>
+                                </div>
+                                <span class="portfolio-link disabled">In Development <i
+                                        class="fas fa-wrench"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== EXPERIENCE SECTION ===== -->
+    <section class="section" id="experience">
+        <div class="container">
+            <div class="section-header" data-reveal="up">
+                <span class="section-tag">Where I've Worked</span>
+                <h2 class="section-title">Work <span class="gradient-text">Experience</span></h2>
+                <p class="section-subtitle">Internships and research roles where I made a real impact</p>
+            </div>
+
+            <div class="experience-timeline">
+
+                <!-- Tata Motors -->
+                <div class="exp-card" data-reveal="up" style="--delay: 0s">
+                    <div class="exp-card-header">
+                        <div class="exp-icon-wrap">
+                            <i class="fas fa-industry"></i>
+                        </div>
+                        <div class="exp-meta">
+                            <h3 class="exp-title">Web Development Intern</h3>
+                            <span class="exp-company">Tata Motors Ltd.</span>
+                            <div class="exp-tags">
+                                <span class="exp-tag exp-tag-date"><i class="fas fa-calendar-alt"></i> May 2025 – Jun
+                                    2025</span>
+                                <span class="exp-tag exp-tag-loc"><i class="fas fa-map-marker-alt"></i>
+                                    Jamshedpur</span>
+                                <a href="https://github.com/aman-kumar-official/TripOnTheGO" target="_blank"
+                                    rel="noopener noreferrer" class="exp-tag exp-tag-link"><i class="fab fa-github"></i>
+                                    GitHub</a>
+                                <a href="https://drive.google.com/file/d/1B5jDzIFDJ-PxevrRfQWWyxXI6WDTMXuj/view"
+                                    target="_blank" rel="noopener noreferrer" class="exp-tag exp-tag-link"><i
+                                        class="fas fa-certificate"></i>
+                                    Certification</a>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="exp-bullets">
+                        <li>
+                            Developed a <strong>full-stack hotel &amp; travel booking platform</strong> using PHP,
+                            MySQL, HTML, CSS, and JavaScript with modules for reservations, property listings,
+                            customer management, admin dashboard, and reporting.
+                        </li>
+
+                        <li>
+                            Built a <strong>self-service admin dashboard</strong> that enabled non-technical staff
+                            to manage reservations and customers without developer assistance.
+                        </li>
+
+                        <li>
+                            Implemented <strong>role-based access control (RBAC)</strong> to separate guest and
+                            administrator workflows and improve application security.
+                        </li>
+
+                        <li>
+                            Tested and deployed the application using <strong>XAMPP</strong>, identifying and fixing
+                            critical issues before delivery.
+                        </li>
+                    </ul>
+                    <div class="exp-tech">
+                        <span>PHP</span><span>MySQL</span><span>JavaScript</span><span>HTML/CSS</span><span>XAMPP</span>
+                    </div>
+                </div>
+
+                <!-- CCPS Research -->
+                <div class="exp-card exp-card-research" data-reveal="up" style="--delay: 0.1s">
+                    <div class="exp-card-header">
+                        <div class="exp-icon-wrap exp-icon-research">
+                            <i class="fas fa-microscope"></i>
+                        </div>
+                        <div class="exp-meta">
+                            <h3 class="exp-title">Research Intern — Medical Image Segmentation</h3>
+                            <span class="exp-company">CCPS, VIT Chennai</span>
+                            <div class="exp-tags">
+                                <span class="exp-tag exp-tag-date"><i class="fas fa-calendar-alt"></i> May 2025 – Aug
+                                    2025</span>
+                                <span class="exp-tag exp-tag-loc"><i class="fas fa-map-marker-alt"></i> Hybrid</span>
+                                <a href="https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2026.1802033/full"
+                                    target="_blank" rel="noopener noreferrer" class="exp-tag exp-tag-pub"><i
+                                        class="fas fa-book-open"></i> Published in
+                                    Frontiers</a>
+                                <a href="https://drive.google.com/file/d/1b5a52Xl5ujB2cuDL5jmLQV5KEtqD7oE3/view"
+                                    target="_blank" rel="noopener noreferrer" class="exp-tag exp-tag-link"><i
+                                        class="fas fa-certificate"></i>
+                                    Certification</a>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="exp-bullets">
+                        <li>Designed and implemented <strong>Enhanced DeepLab-FusionNet</strong>, a novel deep learning
+                            architecture with <strong>multi-scale attention mechanisms</strong> for medical image
+                            segmentation.</li>
+                        <li>Achieved a <strong>mIoU of 85–90%</strong> on the BUSI and Kvasir-SEG benchmark datasets
+                            through systematic ablation studies, outperforming standard baselines.</li>
+                        <li>Collaborated in a <strong>4-person research team</strong> (2 students + 2 faculty
+                            supervisors) to design experiments, analyze results, and write the manuscript.</li>
+                        <li>Co-authored a <strong>peer-reviewed paper published in Frontiers</strong>, contributing to
+                            AI-assisted diagnostics in clinical imaging.</li>
+                    </ul>
+                    <div class="exp-tech">
+                        <span>PyTorch</span><span>TensorFlow</span><span>OpenCV</span><span>Python</span><span>Deep
+                            Learning</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ACHIEVEMENTS & LEADERSHIP SECTION ===== -->
+    <section class="section section-alt" id="achievements">
+        <div class="container">
+            <div class="section-header" data-reveal="up">
+                <span class="section-tag">Recognition &amp; Impact</span>
+                <h2 class="section-title">Achievements &amp; <span class="gradient-text">Leadership</span></h2>
+                <p class="section-subtitle">Milestones, awards, and responsibilities I'm proud of</p>
+            </div>
+
+            <div class="achievements-grid">
+
+                <!-- Hackathon -->
+                <div class="achievement-card achievement-gold" data-reveal="up" style="--delay: 0s">
+                    <div class="achievement-icon-wrap">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <div class="achievement-body">
+                        <span class="achievement-badge">🏆 Runner-up</span>
+                        <h3>Yuva AI Thon — National Hackathon</h3>
+                        <p>Secured <strong>2nd place</strong> out of <strong>100+ competing teams</strong> with
+                            <em>Pixro</em> — an AI-powered webinar platform with live &amp; recorded streaming and an
+                            Agentic AI virtual assistant. Built as a team of 4.
+                        </p>
+                        <a href="https://github.com/aman-kumar-official" target="_blank" rel="noopener noreferrer"
+                            class="achievement-link">
+                            View Project <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Research Publication -->
+                <div class="achievement-card achievement-blue" data-reveal="up" style="--delay: 0.1s">
+                    <div class="achievement-icon-wrap">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <div class="achievement-body">
+                        <span class="achievement-badge"
+                            style="background:rgba(6,182,212,0.15);border-color:rgba(6,182,212,0.3);color:#22d3ee">📄
+                            Published</span>
+                        <h3>Research Paper — Frontiers Journal</h3>
+                        <p>Co-authored a <strong>peer-reviewed research paper</strong> on medical image segmentation
+                            achieving <strong>85–90% mIoU</strong> on clinical benchmark datasets (BUSI &amp;
+                            Kvasir-SEG). Published in <em>Frontiers</em>, 2025.</p>
+                        <a href="https://www.frontiersin.org/" target="_blank" rel="noopener noreferrer"
+                            class="achievement-link">
+                            Read Paper <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Academic Excellence -->
+                <div class="achievement-card" data-reveal="up" style="--delay: 0.2s">
+                    <div class="achievement-icon-wrap">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="achievement-body">
+                        <span class="achievement-badge"
+                            style="background:rgba(34,197,94,0.12);border-color:rgba(34,197,94,0.3);color:#4ade80">🎓
+                            Academic</span>
+                        <h3>CGPA 8.55 / 10 — VIT Chennai</h3>
+                        <p>Maintaining a strong <strong>CGPA of 8.55/10</strong> at VIT Chennai while simultaneously
+                            completing two internships, publishing research, and participating in national-level
+                            hackathons.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Leadership -->
+            <div class="leadership-section" data-reveal="up">
+                <h3 class="leadership-title"><i class="fas fa-users"></i> Leadership &amp; Responsibility</h3>
+                <div class="leadership-card">
+                    <div class="leadership-left">
+                        <div class="leadership-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div>
+                            <h4>Event Management &amp; Registration Committee Member</h4>
+                            <span class="leadership-org">Vibrance — Annual Cultural Fest, VIT Chennai · 2025</span>
+                        </div>
+                    </div>
+                    <ul class="leadership-bullets">
+                        <li>Coordinated participant registration and on-ground logistics for VIT Chennai's flagship
+                            annual cultural festival, managing 50+ university registrations across
+                            multiple concurrent events.</li>
+                        <li>Oversaw scheduling, venue coordination, and volunteer briefings throughout the multi-day
+                            festival, ensuring smooth execution.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Certifications -->
+            <div class="certifications-section" data-reveal="up">
+                <h3 class="leadership-title"><i class="fas fa-certificate"></i> Certifications</h3>
+                <div class="certs-grid">
+                    <div class="cert-card">
+                        <i class="fas fa-layer-group"></i>
+                        <div>
+                            <span class="cert-name">Full Stack Web Development (MERN)</span>
+                            <span class="cert-issuer">Apna College</span>
+                        </div>
+                    </div>
+                    <div class="cert-card">
+                        <i class="fas fa-shield-alt"></i>
+                        <div>
+                            <span class="cert-name">Cyber Security Fundamentals</span>
+                            <span class="cert-issuer">ISACA Chennai Chapter</span>
+                        </div>
+                    </div>
+                    <div class="cert-card">
+                        <i class="fas fa-briefcase"></i>
+                        <div>
+                            <span class="cert-name">Career Edge — Soft Skills</span>
+                            <span class="cert-issuer">TCS iON</span>
+                        </div>
+                    </div>
+                    <div class="cert-card">
+                        <i class="fas fa-code"></i>
+                        <div>
+                            <span class="cert-name">C++ / C / Python Programming</span>
+                            <span class="cert-issuer">Spoken Tutorials, IIT Bombay</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="section-header" data-reveal="up">
+                <span class="section-tag">Let's Connect</span>
+                <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+                <p class="section-subtitle">Have a project in mind or just want to say hi? My inbox is always open.</p>
+            </div>
+
+            <div class="contact-container">
+                <div class="contact-info" data-reveal="left">
+                    <h3>Let's Build Something Great</h3>
+                    <p>
+                        I'm currently open to freelance projects, internship opportunities,
+                        and collaborative work. Let's create something amazing together.
+                    </p>
+
+                    <div class="contact-items">
+                        <a href="mailto:contact.amankumarsingh@gmail.com" class="contact-item" aria-label="Send email">
+                            <div class="contact-icon-wrap">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-item-text">
+                                <span class="contact-item-label">Email</span>
+                                <span class="contact-item-value">contact.amankumarsingh@gmail.com</span>
+                            </div>
+                        </a>
+
+                        <div class="contact-item">
+                            <div class="contact-icon-wrap">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-item-text">
+                                <span class="contact-item-label">Location</span>
+                                <span class="contact-item-value">Chennai, Tamil Nadu, India</span>
+                            </div>
+                        </div>
+
+                        <a href="tel:+919162107894" class="contact-item" aria-label="Call phone number">
+                            <div class="contact-icon-wrap">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="contact-item-text">
+                                <span class="contact-item-label">Phone</span>
+                                <span class="contact-item-value">+91 9162107894</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="contact-social">
+                        <a href="https://github.com/aman-kumar-official" target="_blank" rel="noopener noreferrer"
+                            class="contact-social-link" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/aman-kumar-singh-687408280" target="_blank"
+                            rel="noopener noreferrer" class="contact-social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://www.instagram.com/aman_kumar_official_/" target="_blank"
+                            rel="noopener noreferrer" class="contact-social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrap" data-reveal="right">
+                    <form id="contactForm" novalidate>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contactName" class="form-label">Full Name <span class="required">*</span></label>
+                                <input type="text" id="contactName" name="name" class="form-control"
+                                    placeholder="Your full name" required autocomplete="name"
+                                    aria-describedby="contactNameError" minlength="2" maxlength="100">
+                                <span class="field-error" id="contactNameError" role="alert"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactEmail" class="form-label">Email Address <span class="required">*</span></label>
+                                <input type="email" id="contactEmail" name="email" class="form-control"
+                                    placeholder="yourname@gmail.com" required autocomplete="email"
+                                    aria-describedby="contactEmailError">
+                                <span class="field-error" id="contactEmailError" role="alert"></span>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contactPhone" class="form-label">Phone Number</label>
+                                <input type="tel" id="contactPhone" name="phone" class="form-control"
+                                    placeholder="+91 9876543210" autocomplete="tel"
+                                    aria-describedby="contactPhoneError">
+                                <span class="field-error" id="contactPhoneError" role="alert"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactCompany" class="form-label">Company</label>
+                                <input type="text" id="contactCompany" name="company" class="form-control"
+                                    placeholder="Your company name" autocomplete="organization"
+                                    aria-describedby="contactCompanyError">
+                                <span class="field-error" id="contactCompanyError" role="alert"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactSubject" class="form-label">Subject</label>
+                            <input type="text" id="contactSubject" name="subject" class="form-control"
+                                placeholder="Project Inquiry" maxlength="200">
+                        </div>
+                        <div class="form-group">
+                            <label for="contactMessage" class="form-label">Message <span class="required">*</span></label>
+                            <textarea id="contactMessage" name="message" class="form-control"
+                                placeholder="Tell me about your project..." required
+                                aria-describedby="contactMessageError" minlength="10" maxlength="5000"></textarea>
+                            <span class="field-error" id="contactMessageError" role="alert"></span>
+                        </div>
+
+                        <!-- Honeypot field — hidden from humans, catches bots -->
+                        <div class="honeypot" aria-hidden="true" tabindex="-1">
+                            <label for="contactWebsite">Website</label>
+                            <input type="text" id="contactWebsite" name="website" tabindex="-1" autocomplete="off">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-full" id="contactSubmitBtn">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-spinner" aria-hidden="true"></span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                        <div class="form-feedback" id="formFeedback" role="alert" aria-live="polite"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <a href="#home" class="footer-logo" aria-label="Back to top">
+                    Aman<span>.</span>
+                </a>
+                <p class="footer-tagline">Crafting digital experiences that inspire.</p>
+
+                <nav class="footer-nav" aria-label="Footer navigation">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#portfolio">Projects</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#achievements">Achievements</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+
+                <div class="footer-social">
+                    <a href="https://github.com/aman-kumar-official" target="_blank" rel="noopener noreferrer"
+                        aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/aman-kumar-singh-687408280" target="_blank"
+                        rel="noopener noreferrer" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://www.instagram.com/aman_kumar_official_/" target="_blank" rel="noopener noreferrer"
+                        aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="Aman Kumar Singh.pdf" target="_blank" rel="noopener noreferrer" aria-label="Resume PDF">
+                        <i class="fas fa-file-alt"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Aman Kumar Singh. All rights reserved.</p>
+                <p>Made with <i class="fas fa-heart" style="color: #f43f5e;"></i> and lots of ☕</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== BACK TO TOP ===== -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,17 @@
+{
+  "name": "aman-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Aman Kumar Singh — Portfolio with functional contact form",
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "echo 'Static site — no build step required'",
+    "start": "vercel dev"
+  },
+  "dependencies": {
+    "resend": "^4.1.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
