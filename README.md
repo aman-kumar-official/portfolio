@@ -39,7 +39,7 @@ A modern, responsive portfolio website showcasing my projects, skills, and acade
    cd portfolio
 open index.html  
 
-Email: amankumar.singh2023@vitstudent.ac.in
+Email: contact.amankumarsingh@gmail.com
 
 LinkedIn: Aman Kumar Singh
 
